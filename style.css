@@ -1,0 +1,73 @@
+        body {
+            background: #f4f4f4;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .profile-card {
+            background: #000000;
+            border-radius: 12px;
+            text-align: center;
+            padding: 30px;
+            width: 300px;
+            animation: shadowColors 4s infinite alternate;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin: 10px 0 5px;
+            font-size: 20px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #aa5fff, #7bb8fe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .title {
+            color: #b4b0b0;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .social-icons i {
+            margin: 0 8px;
+            transition: transform 0.3s ease, color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .social-icons i:hover {
+            transform: translateY(-6px);
+            color: #7bb8fe;
+        }
+
+        @keyframes shadowColors {
+            0% {
+                box-shadow: 0 16px 50px rgba(145, 4, 4, 0.7);
+            }
+
+            25% {
+                box-shadow: 0 16px 50px rgba(214, 2, 214, 0.7);
+            }
+
+            50% {
+                box-shadow: 0 16px 50px rgba(5, 119, 5, 0.7);
+            }
+
+            75% {
+                box-shadow: 0 16px 50px rgba(9, 9, 147, 0.7);
+            }
+
+            100% {
+                box-shadow: 0 16px 50px rgba(85, 0, 128, 0.7);
+            }
+        }
